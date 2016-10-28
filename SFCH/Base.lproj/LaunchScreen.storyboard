@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oCU-Pk-yL9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="11x-HD-xxT">
+            <objects>
+                <viewController id="oCU-Pk-yL9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1av-fO-v8R"/>
+                        <viewControllerLayoutGuide type="bottom" id="nDR-7E-tkq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KNS-GL-QXO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SFCHLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="8ia-F8-9CC">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SHARON FELLOWSHIP CHURCH of HOUSTON" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aax-kl-yn8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JMH-2b-rIn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SFCH" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="naV-BR-4Hh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="QzH-Hu-MqE"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="57"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ia-F8-9CC" firstAttribute="bottom" secondItem="nDR-7E-tkq" secondAttribute="top" id="38p-Sf-v28"/>
+                            <constraint firstItem="8ia-F8-9CC" firstAttribute="top" secondItem="KNS-GL-QXO" secondAttribute="top" id="9BE-f5-a1p"/>
+                            <constraint firstItem="naV-BR-4Hh" firstAttribute="trailing" secondItem="Aax-kl-yn8" secondAttribute="trailing" id="GGU-iA-fkZ"/>
+                            <constraint firstItem="naV-BR-4Hh" firstAttribute="top" secondItem="1av-fO-v8R" secondAttribute="bottom" constant="44" id="IB1-ed-H5F"/>
+                            <constraint firstItem="naV-BR-4Hh" firstAttribute="leading" secondItem="Aax-kl-yn8" secondAttribute="leading" id="Nyz-DS-s5n"/>
+                            <constraint firstItem="8ia-F8-9CC" firstAttribute="centerX" secondItem="Aax-kl-yn8" secondAttribute="centerX" id="Tcy-eU-cwY"/>
+                            <constraint firstItem="nDR-7E-tkq" firstAttribute="top" secondItem="Aax-kl-yn8" secondAttribute="bottom" constant="116" id="Xo0-j6-F7R"/>
+                            <constraint firstItem="naV-BR-4Hh" firstAttribute="leading" secondItem="KNS-GL-QXO" secondAttribute="leadingMargin" id="oxE-1X-Icm"/>
+                            <constraint firstItem="8ia-F8-9CC" firstAttribute="leading" secondItem="KNS-GL-QXO" secondAttribute="leading" id="tAU-4n-SxI"/>
+                            <constraint firstAttribute="trailing" secondItem="8ia-F8-9CC" secondAttribute="trailing" id="tLq-JR-lyH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMb-t4-4cP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384.80000000000001" y="445.72713643178412"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SFCHLaunch" width="512" height="512"/>
+    </resources>
+</document>

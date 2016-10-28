@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SFCH" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScS-9x-al9">
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="oKt-0c-Bxi">
+                                        <connections>
+                                            <action selector="goBack" destination="bBu-2B-fbI" id="0b5-fY-v1N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lq3-QR-4GV"/>
+                                    <barButtonItem systemItem="refresh" id="u2i-Tf-7L8">
+                                        <connections>
+                                            <action selector="reload" destination="bBu-2B-fbI" id="GcJ-FK-tzS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="HbH-VP-GMS"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="n2X-cG-i24"/>
+                                    <barButtonItem systemItem="stop" id="uWp-Gr-BHI">
+                                        <connections>
+                                            <action selector="stopLoading" destination="bBu-2B-fbI" id="xTH-6c-kcK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5aO-qU-t5P"/>
+                                    <barButtonItem systemItem="fastForward" id="WDd-GP-XIq">
+                                        <connections>
+                                            <action selector="goForward" destination="bBu-2B-fbI" id="IV4-jq-uNW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="bBu-2B-fbI">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-aJ-CIe">
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="AmB-Lq-z4l">
+                                        <connections>
+                                            <action selector="goBack" destination="bBu-2B-fbI" id="EYJ-hp-ytw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mWO-Tx-yPg"/>
+                                    <barButtonItem systemItem="refresh" id="y2f-Yo-bDJ">
+                                        <connections>
+                                            <action selector="reload" destination="bBu-2B-fbI" id="QMX-H2-xOf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="gMj-v9-fcZ"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Iof-6v-zSM"/>
+                                    <barButtonItem systemItem="stop" id="e6w-g5-DpN">
+                                        <connections>
+                                            <action selector="stopLoading" destination="bBu-2B-fbI" id="0z1-eG-AJF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6ID-Xi-g89"/>
+                                    <barButtonItem systemItem="fastForward" id="0zL-Es-iU6">
+                                        <connections>
+                                            <action selector="goForward" destination="bBu-2B-fbI" id="3QX-PB-tq7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bBu-2B-fbI" firstAttribute="leading" secondItem="ScS-9x-al9" secondAttribute="leading" id="AUD-n8-hU9"/>
+                            <constraint firstItem="D6e-aJ-CIe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DLN-gu-dl3"/>
+                            <constraint firstAttribute="trailing" secondItem="D6e-aJ-CIe" secondAttribute="trailing" id="WpY-HT-l2e"/>
+                            <constraint firstItem="bBu-2B-fbI" firstAttribute="top" secondItem="D6e-aJ-CIe" secondAttribute="bottom" id="cMN-GL-RYa"/>
+                            <constraint firstItem="D6e-aJ-CIe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f5Z-QZ-GfU"/>
+                            <constraint firstItem="bBu-2B-fbI" firstAttribute="trailing" secondItem="ScS-9x-al9" secondAttribute="trailing" id="iPR-BP-Kzl"/>
+                            <constraint firstItem="D6e-aJ-CIe" firstAttribute="leading" secondItem="bBu-2B-fbI" secondAttribute="leading" id="iPp-MH-tkR"/>
+                            <constraint firstItem="ScS-9x-al9" firstAttribute="top" secondItem="bBu-2B-fbI" secondAttribute="bottom" id="lNC-Ei-oP9"/>
+                            <constraint firstItem="D6e-aJ-CIe" firstAttribute="trailing" secondItem="bBu-2B-fbI" secondAttribute="trailing" id="rUd-xH-Knn"/>
+                            <constraint firstItem="ScS-9x-al9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="xcw-kr-d3a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sfchWebView" destination="bBu-2B-fbI" id="bIm-SS-QMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="120.65217391304348"/>
+        </scene>
+    </scenes>
+</document>
